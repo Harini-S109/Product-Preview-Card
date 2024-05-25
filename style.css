@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body{
+    background-color:hsl(30, 38%, 92%)
+    !important;
+}
+.center{
+    margin: auto;
+    padding: 10%;
+}
+#container{
+    /* margin-top: 8rem; */
+    background-color:rgb(253, 250, 246);
+    width: 35rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: .5rem;
+    padding: 0;
+}
+.sec1 img{
+    width: 18rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+
+}
+.sec2{
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.sec2 #little{
+    margin-top: 28px;
+    font-size:13px;
+    font-family:;
+    letter-spacing: 4px;
+    color: rgb(121, 121, 121);
+}
+.sec2 h1{
+    font-family: 'Fraunces';
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+.sec2 #para{
+    padding-top: 15px;
+    font-size: .8rem;
+    font-weight: 500;
+    color: rgb(121, 121, 121);
+    letter-spacing: .5px;
+}
+#container2{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+}
+.p1 p{
+    font-family: 'fraunces';
+    font-weight: bolder;
+    font-size: 35px;
+    color:hsl(158, 36%, 37%);
+}
+.p2 p{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(121, 121, 121);
+    margin-left: 10px;
+    text-decoration:line-through;
+}
+#btn{
+    text-align: center;
+    width: 12rem;
+    height: 2.5rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: rgb(249, 248, 247);
+    font-weight: 500;
+    border-radius: .5rem;
+}
+#btn:hover{
+    background-color: hsl(157, 41%, 22%);
+}
+
+/* mobile */
+@media screen and (max-width: 991px) and (min-width: 300px){
+    #container{
+        /* margin-top: 8rem; */
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: .5rem;
+        padding: 0;
+    } 
+    .sec1 img{
+        width: 18rem;
+        height: 15rem;
+        object-fit: cover;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+    #btn{
+        text-align: center;
+        width: 14rem;
+        height: 2.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
